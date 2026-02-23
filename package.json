@@ -1,0 +1,13 @@
+{
+  "name": "pattern-event-driven",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production implementations of Saga, Outbox, CQRS+EventSourcing, and DLQ patterns",
+  "workspaces": ["saga/orchestrator", "saga/services/*", "outbox/*", "cqrs", "dlq", "shared"],
+  "scripts": {
+    "dev:kafka": "docker-compose -f docker-compose.kafka.yml up -d",
+    "dev:rabbit": "docker-compose -f docker-compose.rabbit.yml up -d",
+    "dev:all": "docker-compose -f docker-compose.kafka.yml -f docker-compose.rabbit.yml up -d",
+    "down": "docker-compose -f docker-compose.kafka.yml -f docker-compose.rabbit.yml down"
+  }
+}

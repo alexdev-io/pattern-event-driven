@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  rabbitmq:
+    image: rabbitmq:3.12-management
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    networks: [eda-net]
+
+networks:
+  eda-net:
+    name: pattern-event-driven_eda-net
+    external: true

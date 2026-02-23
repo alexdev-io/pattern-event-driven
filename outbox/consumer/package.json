@@ -1,0 +1,1 @@
+{"name":"@eda/outbox-consumer","version":"1.0.0","scripts":{"dev":"ts-node-dev --respawn src/index.ts","build":"tsc","start":"node dist/index.js"},"dependencies":{"kafkajs":"^2.2.4","winston":"^3.11.0"},"devDependencies":{"@types/node":"^20.11.0","ts-node-dev":"^2.0.0","typescript":"^5.3.3"}}

@@ -1,0 +1,8 @@
+{
+  "name": "@eda/shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": { "build": "tsc" },
+  "dependencies": { "kafkajs": "^2.2.4", "amqplib": "^0.10.3", "winston": "^3.11.0" },
+  "devDependencies": { "@types/amqplib": "^0.10.4", "@types/node": "^20.11.0", "typescript": "^5.3.3" }
+}
